@@ -480,7 +480,7 @@ svg {
 
 .product-image-wrap {
     aspect-ratio: 3 / 4;
-    border-radius: 2.5rem;
+    border-radius: 1rem;
     position: relative;
     overflow: hidden;
 }
