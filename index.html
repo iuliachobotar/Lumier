@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumier Skincare | Premium Concept</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container-custom">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <div class="logo">Lumier</div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link nav-link--active">Home</a>
+                <a href="#" class="nav-link">Shop</a>
+                <a href="#" class="nav-link">About us</a>
+                <a href="#" class="nav-link">Reviews</a>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-btn"><i data-lucide="search"></i></button>
+                <button class="icon-btn"><i data-lucide="user"></i></button>
+                <button class="icon-btn cart-btn" id="header-cart-btn">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="section-hero rounded-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-eyebrow">New magic</span>
+                    <h1 class="hero-title">
+                        Elevate your daily routine with our newest skincare essentials crafted for radiant, healthy skin
+                    </h1>
+                </div>
+                <div class="hero-actions">
+                    <div class="hero-nav">
+                        <p class="hero-description">
+                            Provides intensive hydration, smoothes the skin and increases its elasticity.
+                        </p>
+                        <div class="hero-nav-btns">
+                            <button class="nav-btn-prev"><i data-lucide="chevron-left"></i></button>
+                            <button class="nav-btn-next"><i data-lucide="chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <button class="btn-add-to-cart cart-add-btn" data-product="hero">
+                        <div class="btn-icon">
+                            <i data-lucide="arrow-up-right"></i>
+                        </div>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <div class="hero-image-inner">
+                    <img src="1.jpg" alt="Hero Product">
+                </div>
+                <div class="hero-image-actions">
+                    <button class="image-action-btn like-btn" data-product="hero"><i data-lucide="heart"></i></button>
+                    <button class="image-action-btn cart-add-btn" data-product="hero"><i data-lucide="shopping-bag"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRANDS -->
+        <section class="section-brands rounded-section">
+            <span class="brand-name brand--bold-wide">Celimax</span>
+            <span class="brand-name brand--bold-wide">Biodance</span>
+            <span class="brand-name brand--serif">Dr.Althea</span>
+            <span class="brand-name brand--black-wide">Cosrx</span>
+            <span class="brand-name brand--italic">Ha:rTry</span>
+            <span class="brand-name brand--tight">Skin1004</span>
+            <span class="brand-name brand--underline">The Ordinary.</span>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="section-products rounded-section">
+            <div class="products-header">
+                <span class="products-section-title">Products</span>
+                <div class="products-tabs">
+                    <button class="tab tab--active">Best sellers</button>
+                    <button class="tab">Featured</button>
+                    <button class="tab">Care magic</button>
+                </div>
+            </div>
+            <div class="products-subheader">
+                <p class="products-eyebrow">Client's top picks</p>
+                <h2 class="products-title">
+                    Explore the advanced botanical solutions chosen most often by our community.
+                </h2>
+            </div>
+            <div class="products-grid">
+
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrap" style="background-color: #F7F7F7;">
+                        <img src="1.1.jpg" alt="Power Liquid">
+                        <button class="product-bag-btn cart-add-btn" data-product="power-liquid"><i data-lucide="shopping-bag"></i></button>
+                        <div class="card-bottom-row">
+                            <button class="buy-bubble cart-add-btn" data-product="power-liquid">
+                                <div class="btn-icon">
+                                    <i data-lucide="arrow-up-right"></i>
+                                </div>
+                                <span>Buy now</span>
+                            </button>
+                            <div class="price-bubble">
+                                <span class="price-bubble__price">$15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Power Liquid</h3>
+                            <p class="product-brand">Cosrx</p>
+                        </div>
+                        <span class="product-volume">100ml</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrap" style="background-color: #EAE7E2;">
+                        <img src="1.2.jpg" alt="Centella Tone">
+                        <button class="product-bag-btn cart-add-btn" data-product="centella-tone"><i data-lucide="shopping-bag"></i></button>
+                        <div class="card-bottom-row">
+                            <button class="buy-bubble cart-add-btn" data-product="centella-tone">
+                                <div class="btn-icon">
+                                    <i data-lucide="arrow-up-right"></i>
+                                </div>
+                                <span>Buy now</span>
+                            </button>
+                            <div class="price-bubble">
+                                <span class="price-bubble__price">$30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Centella Tone</h3>
+                            <p class="product-brand">Skin1004</p>
+                        </div>
+                        <span class="product-volume">100ml</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrap" style="background-color: #E5E8E2;">
+                        <img src="1.3.jpg" alt="Sculpting Cream">
+                        <button class="product-bag-btn cart-add-btn" data-product="sculpting-cream"><i data-lucide="shopping-bag"></i></button>
+                        <div class="card-bottom-row">
+                            <button class="buy-bubble cart-add-btn" data-product="sculpting-cream">
+                                <div class="btn-icon">
+                                    <i data-lucide="arrow-up-right"></i>
+                                </div>
+                                <span>Buy now</span>
+                            </button>
+                            <div class="price-bubble">
+                                <span class="price-bubble__price">$25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3 class="product-name">Sculpting Cream</h3>
+                            <p class="product-brand">Dr. Althea</p>
+                        </div>
+                        <span class="product-volume">45ml</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section-newsletter rounded-section">
+            <div class="newsletter-image">
+                <img src="2.jpg" alt="Skincare">
+            </div>
+            <div class="newsletter-content">
+                <div class="newsletter-logo">Lumier</div>
+                <p class="newsletter-eyebrow">Start your glow journey with us</p>
+                <h2 class="newsletter-title">Subscribe for exclusive launches & skincare advice</h2>
+                <div class="newsletter-form">
+                    <div class="newsletter-input-wrap">
+                        <input type="email" placeholder="Email address" class="newsletter-input">
+                        <button class="newsletter-submit">
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer rounded-section">
+            <div class="footer-grid">
+
+                <!-- Ліва частина: Lumier + опис -->
+                <div class="footer-about">
+                    <div class="footer-logo">Lumier</div>
+                    <p class="footer-desc">Curating the finest botanical skincare solutions for your daily dose of magic.</p>
+                </div>
+
+                <!-- Права частина: Shop + Help + Social -->
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4 class="footer-title">Shop</h4>
+                        <ul>
+                            <li><a href="#" class="footer-link">Best Sellers</a></li>
+                            <li><a href="#" class="footer-link">New Arrivals</a></li>
+                            <li><a href="#" class="footer-link">Sets & Kits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Help</h4>
+                        <ul>
+                            <li><a href="#" class="footer-link">Shipping</a></li>
+                            <li><a href="#" class="footer-link">Returns</a></li>
+                            <li><a href="#" class="footer-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">Social</h4>
+                        <ul>
+                            <li><a href="#" class="footer-link">Instagram</a></li>
+                            <li><a href="#" class="footer-link">TikTok</a></li>
+                            <li><a href="#" class="footer-link">Pinterest</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Lumier Skincare. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <a href="#" class="footer-bottom-link">Terms of Use</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>lucide.createIcons();</script>
+    <script src="index.js"></script>
+</body>
+</html>
